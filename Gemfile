@@ -56,3 +56,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "hamlit-rails", "~> 0.2.3"
+
+gem "devise", "~> 4.9"
