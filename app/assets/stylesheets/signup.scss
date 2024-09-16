@@ -1,0 +1,268 @@
+// * {
+//   margin: 0px;
+//   padding: 0px;
+//   text-decoration: none;
+// }
+// .box {
+//   width: 414px;
+//   height: 921px;
+//   top: 485px;
+//   left: 5201px;
+//   margin: 60px auto 0;
+//   border-radius: 4px;
+//   border: 1px #ddd solid;
+// }
+
+// .box-inner {
+//   padding: 20px 26px;
+// }
+
+// h1 {
+//   font-weight: 400;
+//   font-size: 28px;
+//   line-height: 1.2;
+//   margin-bottom: 10px;
+//   padding-bottom: 4px;
+//   color: #111111;
+// }
+
+// .box-email {
+//   margin-bottom: 13px;
+// }
+
+// .box-password {
+//   margin-bottom: 22px;
+// }
+
+// .box-password label {
+//   font-weight: 700;
+//   font-size: 13px;
+//   padding-left: 2px;
+//   padding-bottom: 2px;
+// }
+
+// .box-email input[type="email"],
+// .box-password input[type="password"] {
+//   border-style: none;
+//   box-sizing: border-box;
+//   width: 100%;
+//   height: 31px;
+//   border: 1px solid #a6a6a6;
+//   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07) inset;
+//   border-radius: 3px;
+//   padding: 0 7px;
+// }
+
+// .column-left {
+//   float: left;
+// }
+
+// .column-right {
+//   float: right;
+// }
+
+// .box-password a {
+//   font-size: 13px;
+// }
+
+// .box-login {
+//   margin-bottom: 26px;
+// }
+
+// .box-login input[type="submit"] {
+//   border-style: none;
+//   width: 100%;
+//   height: 31px;
+//   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+//   border-radius: 3px;
+//   border: 1px #a88734 solid;
+// }
+
+// .box-login input[type="submit"]:hover {
+//   cursor: pointer;
+//   background: #f0c14b;
+// }
+
+// .legal-text {
+//   margin-top: 18px;
+//   font-size: 12px;
+// }
+
+// .remember {
+//   font-size: 13px;
+//   margin-top: 18px;
+//   padding-left: 3px;
+// }
+
+// .box-newusr p {
+//   text-align: center;
+//   font-size: 12px;
+//   color: #767676;
+//   margin-bottom: 14px;
+// }
+
+// .box-newusr p span {
+//   text-decoration: line-through;
+//   text-decoration-color: #e7e7e7;
+// }
+
+// .box-newusr a {
+//   display: block;
+//   width: 100%;
+//   height: 31px;
+//   font-size: 13px;
+//   color: #111;
+//   line-height: 31px;
+//   text-align: center;
+//   background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+//   border-radius: 3px;
+//   border: 1px #a2a6ac solid;
+// }
+
+// footer.box-newusr p input[type="submit"] {
+//   display: inline-block;
+//   width: 100%; /* ボタン全体を親要素に広げる */
+//   text-align: center; /* テキストを中央揃えにする */
+//   padding: 10px 20px;
+//   background: #f8bd1c;
+//   color: white;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }
+
+// .box-newusr a:hover {
+//   background: #e7e9ec;
+// }
+// .my-custom-header {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 1000; /* headerを最前面に固定する */
+// }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.box {
+  position: relative; /* フッターを配置するために必要 */
+  min-height: 100vh; /* 画面全体の高さを確保 */
+  width: 414px;
+  height: 921px;
+  margin: 60px auto 0;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+  position: relative !important; /* 子要素の絶対配置の基準にするためにrelativeを指定 */
+}
+
+.box-inner {
+  padding: 20px 26px;
+  box-sizing: border-box;
+  padding-bottom: 80px !important; /* フッターの位置を確保するために下に余白を追加 */
+}
+
+.box-login {
+  margin-bottom: 26px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.box-email,
+.box-password {
+  margin-bottom: 22px;
+}
+
+.box-password label {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.box-email input[type="email"],
+.box-password input[type="password"] {
+  width: 100%;
+  height: 31px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  padding: 0 7px;
+  box-sizing: border-box;
+}
+
+.column-left {
+  float: left;
+}
+
+.column-right {
+  float: right;
+}
+
+.box-login input[type="submit"] {
+  width: 100%;
+  height: 31px;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border-radius: 3px;
+  border: 1px solid #a88734;
+}
+
+.box-login input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #f0c14b;
+}
+
+.legal-text {
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+.remember {
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+a.box-newusr input[type="submit"] {
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  margin-top: auto;
+  width: 100%; /* ボタン全体を親要素に広げる */
+  text-align: center; /* テキストを中央揃えにする */
+  padding: 10px 20px;
+  background: #f8bd1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+// footer.box-newusr p {
+//   font-size: 12px;
+//   color: #767676;
+// }
+
+// footer.box-newusr p span {
+//   text-decoration: line-through;
+//   text-decoration-color: #e7e7e7;
+// }
+
+// footer.box-newusr a {
+//   display: block;
+//   width: 100%;
+//   height: 31px;
+//   font-size: 13px;
+//   color: #111;
+//   line-height: 31px;
+//   text-align: center;
+//   background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+//   border-radius: 3px;
+//   border: 1px solid #a2a6ac;
+// }
+
+box-newusr a:hover {
+  background: #e7e9ec;
+}
