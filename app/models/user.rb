@@ -1,5 +1,6 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
- 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :boards, dependent: :destroy
@@ -8,7 +9,4 @@ class User < ApplicationRecord
   has_one :profile, dependent: :destroy
 
   validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }, uniqueness: true
-
-  
-    
 end
