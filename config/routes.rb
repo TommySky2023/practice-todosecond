@@ -1,21 +1,18 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  devise_for :users 
+  devise_for :users
   resources :users, only: [] do
-    resource :profile, only: [:edit, :update, :show]
+    resource :profile, only: %i[edit update show]
   end
 
-
-  root to: "boards#index"
+  root to: 'boards#index'
 
   resources :boards do
-    resources :tasks 
-      
+    resources :tasks
   end
 
   resources :tasks, only: [] do
-    resources :comments, only: [:new, :destroy, :create]
+    resources :comments, only: %i[new destroy create]
   end
-  
 end
-
-
